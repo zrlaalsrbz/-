@@ -86,7 +86,25 @@ footer{padding:28px 0 calc(28px + env(safe-area-inset-bottom,0px));border-top:1p
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.waves .w1{animation:none}.btn{transition:none}}
 </style>
-</head>
+/* 해병대 레드 테마 */
+:root{
+  --deep:#140507; --sea:#2a0a0f; --panel:#3d0f17; --line:#7a1c28;
+  --text:#f6ece9; --muted:#d3b0ad; --sand:#f2c14e; --signal:#e0202e;
+}
+header{background:rgba(20,5,7,.94);border-bottom:2px solid var(--sand)}
+#home{
+  background:
+    radial-gradient(ellipse at 15% 0%, rgba(190,20,35,.55) 0%, transparent 60%),
+    repeating-linear-gradient(135deg, rgba(255,255,255,.03) 0 2px, transparent 2px 16px),
+    linear-gradient(180deg,#140507 0%,#2a0a0f 100%);
+}
+#home h1{text-shadow:0 4px 0 rgba(0,0,0,.35)}
+h2{border-left:6px solid var(--signal);padding-left:16px}
+.creds li:first-child{background:var(--signal);border-color:var(--signal)}
+.card.feature{border-color:var(--sand)}
+.steps div{border-left-color:var(--sand)}
+.btn{border-color:var(--sand)}
+.btn.primary{background:var(--signal);border-color:var(--signal)}</head>
 <body>
 <header>
   <div class="wrap">
