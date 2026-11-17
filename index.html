@@ -36,7 +36,9 @@ h2{font-family:var(--display);font-weight:400;font-size:clamp(1.9rem,5vw,2.8rem)
 
 #home{min-height:100svh;display:flex;align-items:center;padding-top:calc(90px + env(safe-area-inset-top,0px));position:relative;overflow:hidden;background:linear-gradient(180deg,var(--deep) 0%,var(--sea) 100%)}
 #home h1{font-family:var(--display);font-weight:400;font-size:clamp(3.4rem,15vw,10rem);line-height:1.02;margin:0 0 20px;letter-spacing:-.01em}
-#home .sub{font-size:clamp(1.1rem,2.6vw,1.45rem);color:var(--sand);margin:0 0 32px;max-width:26em}
+.name-row{display:flex;align-items:center;gap:clamp(16px,3vw,32px);margin-bottom:20px}
+#home .name-row h1{margin:0}
+.avatar{width:clamp(88px,16vw,180px);height:clamp(88px,16vw,180px);border-radius:50%;object-fit:cover;border:3px solid var(--signal);flex:none}#home .sub{font-size:clamp(1.1rem,2.6vw,1.45rem);color:var(--sand);margin:0 0 32px;max-width:26em}
 .creds{display:flex;flex-wrap:wrap;gap:10px;list-style:none;margin:0 0 36px;padding:0}
 .creds li{border:1px solid var(--line);background:var(--panel);padding:6px 16px;border-radius:999px;font-size:.95rem}
 .creds li:first-child{border-color:var(--signal)}
@@ -104,7 +106,10 @@ footer{padding:28px 0 calc(28px + env(safe-area-inset-bottom,0px));border-top:1p
 <main>
   <section id="home">
     <div class="wrap">
-      <h1>김민규</h1>
+      <div class="name-row">
+  <img class="avatar" src="profile.jpg" alt="김민규 프로필 사진" width="160" height="160">
+  <h1>김민규</h1>
+</div>
       <p class="sub">스포츠를 전공하고, 해병대에서 책임감을 단련했습니다.</p>
       <ul class="creds">
         <li>해병대 만기전역</li>
